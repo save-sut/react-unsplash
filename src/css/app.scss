@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+@import 'gallery';
+@import 'header';
+@import 'modal';
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 32px 12px;
+  margin: 0 auto;
+  @media screen and(max-width: 768px) {
+    padding: 18px 12px;
+  }
+}

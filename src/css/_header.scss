@@ -1,0 +1,66 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px;
+
+    &-left {
+        display: flex;
+        align-items: center;
+        margin-right: 12px;
+        flex: auto;
+    }
+
+    &__logo {
+        display: none;
+    }
+
+    &__search {
+        width: 100%;
+
+        .input-group {
+            height: 55px;
+            display: flex;
+            align-items: center;
+            border: 1px solid #bdbdbd;
+            border-radius: 24px;
+            width: 100%;
+            max-width: 300px;
+            padding: 18px;
+        }
+
+        input {
+            // font-family: "Noto Sans",sans-serif;
+            border: none;
+            height: 100%;
+            width: 100%;
+            outline: none;
+        }
+    }
+
+    .btn-green {
+        color: #fff;
+        background-color: #3db46d;
+    }
+    .btn {
+        box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 24px;
+        font-weight: 700;
+        outline: none;
+        padding: 18px 26px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.2s;
+
+        @media screen and (max-width: 414px) {
+            padding: 21px 7px;
+            font-size: 12px;
+        }
+    }
+
+    @media screen and (min-width: 767px) {
+        &__logo {
+            display: block;
+        }
+    }
+}
